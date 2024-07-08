@@ -1,33 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weathering With You</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link re="stylesheet" href="style.css"/>
 </head>
-<body>
-    <header>
-        <h1>Artikel Weathering with you</h1>
-        <p>Oleh: Anrai Harika Harpan</p>
-    </header>
-    <main>
-        <figure>
-            <img src="Ghibli.jpg" 
-            width="250" 
-            height="250"/> 
-            "Weathering With You(Tenki No Ko.)"
-            <figcaption>"Cuaca yang Terhempas Cinta: Eksplorasi Romantis dan Perjuangan dalam 'Weathering With You'. Hodaka dan Hina, dua jiwa yang terjebak dalam badai kehidupan, menunjukkan bahwa cinta sejati bersinar terang di tengah cuaca buruk. Sebuah kisah penuh emosi tentang tekad, pengorbanan, dan keberanian untuk mempertahankan cinta di dunia yang terus berubah."</figcaption>
-        </figure>
-        <article>
-            <p>Artikel 1: "Romansa yang Mendalam dalam Weathering With You"Dalam "Weathering With You," Makoto Shinkai menciptakan kisah romansa yang penuh dengan nuansa emosional dan perjuangan. Tokoh utama, Hodaka Morishima, dan Hina Amano menemukan cinta mereka dalam konteks situasi yang sulit. Artikel ini akan menjelajahi bagaimana kedua karakter ini membangun hubungan mereka, melewati rintangan, dan mengekspresikan cinta mereka di tengah-tengah cuaca yang tak terduga. Hodaka, seorang remaja yang melarikan diri dari rumahnya, bertemu Hina, seorang gadis dengan kemampuan khusus untuk mengendalikan cuaca. Keterlibatan keduanya diwarnai oleh momen-momen yang romantis dan penuh haru. Kepahitan kehidupan yang dihadapi Hodaka dan kekuatan ajaib Hina membentuk dasar romansa yang tidak biasa namun mendalam. Namun, kisah cinta mereka tidak lepas dari perjuangan. Cuaca yang tidak terduga menjadi simbol perubahan dan tantangan bagi hubungan mereka. Artikel ini akan mengulas momen-momen krusial dalam film di mana cinta Hodaka dan Hina diuji oleh keadaan, serta bagaimana mereka bersama-sama mengatasi setiap rintangan.
-</p>
-            <p>Artikel 2: 
-            "Perjuangan Mempertahankan Cinta dalam Weathering With You" Dalam sekuel artikel ini, kita akan fokus pada perjuangan Hodaka dan Hina untuk mempertahankan hubungan mereka di tengah berbagai tekanan dan keterbatasan. Cuaca yang tidak stabil menjadi refleksi dari ketidakpastian hidup, dan keduanya harus menghadapi konsekuensi pilihan yang mereka buat.Kita akan menjelajahi bagaimana Hodaka dan Hina, meskipun dihadapkan pada situasi yang sulit, tetap kuat dan setia satu sama lain. Kisah ini menggambarkan pentingnya tekad dan ketekunan dalam mempertahankan cinta, bahkan ketika segala sesuatunya tampak sulit.Artikel ini akan mencakup momen-momen dramatis di mana karakter-karakter utama menghadapi pilihan sulit, pengorbanan, dan bagaimana cinta mereka menjadi pendorong untuk mengatasi semua rintangan. Keseluruhan, "Weathering With You" memberikan pandangan mendalam tentang bagaimana cinta dapat tumbuh dan bertahan di tengah badai kehidupan yang tidak terduga.</p>
-            <!-- Anda dapat menambahkan lebih banyak paragraf sesuai keinginan -->
-        </article>
-    </main>
-    <footer>
-        <p>&copy; 2024 Web anrai. Hak cipta dilindungi.</p>
-    </footer>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ini namanya Navbar ya Deck</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Ribet</a></li>
+                      <li><a class="dropdown-item" href="#">Mau ngapain dah</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Gausa Kepo</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Gausa Search apa apa" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="cisa.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Khacisa ga cinta Hanggono</h5>
+            <p>Anak di Ciledug abis, pinggiran jakarta.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="rahma.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Siti Ga Ramah Azzahlah</h5>
+            <p>Kalau ini anak Gempol Sari, pinggiran bandara Soetta.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="cc.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h5>Salsa.bila...waktu putri Solehuman </h5>
+            <p>Anak Cibinong, kalau nge date di pakan sari.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="risti.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h5>Ristiara Kiranti Makanrani</h5>
+            <p>Kalau ini kadang anak Ciputat, kadang anak Jagakarsa.</p>
+          </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="mt-5">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- Card  1-->
+      <div class="card col-sm-6">
+        <h5 class="card-header">Khacisa ga cinta Hanggono</h5>
+        <div class="card-body">
+          <h5 class="card-title">Sipaling Ekstrovert dan Cegil</h5>
+          <img src="cisa.jpg" class="img-thumbnail" alt="...">
+          <p class="card-text">Jadi dia ini cegil parah, Ekstrovert gila, gajelas, gangguin orang mulu, usil.</p>
+          <a href="https://wa.me/62881024244802" class="btn btn-primary">Klik buat ke wa nya</a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card col-sm-6">
+        <h5 class="card-header">Siti Ga Ramah Azzahlah</h5>
+        <div class="card-body">
+          <h5 class="card-title">Sipaling dikit dikit pusing dan gatau</h5>
+          <img src="rahma.jpg" class="img-thumbnail" alt="...">
+          <p class="card-text">Jadi dia ini kalau jam jam malem selalu bilang gatau dan pusing. Hehe</p>
+          <a href="https://wa.me/6283813777071" class="btn btn-primary">Klik kalau minat</a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card col-sm-6">
+        <h5 class="card-header">Salsa.bila...waktu putri Solehuman </h5>
+        <div class="card-body">
+          <h5 class="card-title">Sipaling ngik-ngik dan haha hehe</h5>
+          <img src="cc.jpg" class="img-thumbnail" alt="...">
+          <p class="card-text">Dia ini kalau ketawa kaya kunti, kunti insecure sama ketawanya. Hoho</p>
+          <a href="https://wa.me/6285692480253" class="btn btn-primary">Sung aja Check Out</a>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card col-sm-6">
+        <h5 class="card-header">Ristiara Kiranti Makanrani</h5>
+        <div class="card-body">
+          <h5 class="card-title">Sipaling gajelas dan banyak cowo</h5>
+          <img src="risti.jpg" class="img-thumbnail" alt="...">
+          <p class="card-text">Dia ini tipikal yang banyak diem, diem, diem banyak main sama cowo. Xoxo</p>
+          <a href="https://wa.me/6285711349833" class="btn btn-primary">Klik kalau mau</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+          <span class="#">© 2023 By Un-Rai.</span>
+      </div>
+  </footer>
+  
+  <!-- Java Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </body>
 </html>
